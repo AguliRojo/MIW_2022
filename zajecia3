@@ -1,0 +1,36 @@
+# p = open("australian.dat")
+# separator = " "
+# for count, line in enumerate(p):
+#     print("count: ", count, "  line: ", line)
+#     for i in line:
+#         line.split(" ")
+
+
+lista = []
+with open("australian.dat", "r") as file:
+    for line in file:
+        kolekcja = line.replace("\n","").split()
+        lista.append(line.replace("\n","").split())
+        kolekcja = list(map(lambda e: float(e), kolecja))
+
+print(lista)
+print(lista[0])
+print(type[lista[0]])
+print(list[:5])
+
+# def eukldes(element1, element2):
+#     mean_square = sum(sqrt(([for i in element1]+[for i in element2])**2))
+#TODO: nie działa
+#TODO: Praca domowa: Pierwszy element listy to y = lista[0]
+# odległość d(y,x), gdzie x nalezy naszej listy ale nie jest lista[0]
+# w słowniku pogrupowac odległóści
+#klasa decyzyjna x to ostatni element
+# wartosc to lista odległości
+# dodatkowo napisac funkcje ktora liczy wyznacznik macierzy kwadratowej
+
+
+#TODO:
+lista[0][-1] - ostatni element listy
+lista_odległosci(klasa decyzyjna, odległość) <- slownik odległosci per klasa
+lista odległości ma byc skalowalna tzn. ze jesli bedzie wiecej klas to ma to tez dzialac
+pokaz najmniejsze k wynikow
